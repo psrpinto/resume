@@ -14,6 +14,11 @@ sudo tlmgr install slantsc opensans tex4ht
 bin/build.sh
 ```
 
+## Deploying
+```shell
+bin/deploy.sh
+```
+
 ## References
 - http://www.resume-resource.com/resume-font-wars-serif-versus-sans-serif/
 - https://www.theguardian.com/careers/careers-blog/cv-advice-grab-employers-attention
