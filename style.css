@@ -1,3 +1,24 @@
 body {
+    display: flex;
     font-family: 'Open Sans', sans-serif;
+}
+
+div.container {
+    margin: auto;
+    // border: 1px solid black;
+}
+
+header div {
+    float: left;
+}
+
+header .name {
+    display: block;
+    font-size: 35pt;
+    line-height: 35pt;
+    font-weight: bold;
+}
+
+header .title {
+    float: right;
 }

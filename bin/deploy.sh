@@ -6,10 +6,9 @@ rm -rf gh-pages
 git clone git@github.com:regularjack/cv.git --branch gh-pages --single-branch gh-pages
 
 cd gh-pages
-cp ../build/main.html index.html
-cp ../build/main.css .
-cp ../build/style.css .
-cp ../build/main.pdf .
+cp ../index.html .
+cp ../style.css .
+cp ../out.pdf .
 
 git add .
 git commit -m "Sync"
