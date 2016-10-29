@@ -17,7 +17,9 @@ body {
 }
 @media screen {
     body {
-        font-size: 10pt;
+        font-size: 11pt;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 a {
@@ -40,10 +42,32 @@ header, section {
     display: block;
     margin: auto;
 }
+@media screen and (max-width: 720px) {
+    header, section {
+        width: 100%;
+    }
+}
+header {
+    padding-bottom: 120px;
+}
+@media screen and (max-width: 720px) {
+    header {
+        padding-bottom: 30px;
+    }
+}
+header div {
+    float: left;
+}
 section.info {
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
+}
+@media screen and (max-width: 720px) {
+    section.info {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 @media print {
     section.info {
@@ -54,17 +78,17 @@ section.info {
 /********
  * Header
  */
-header {
-    padding-bottom: 120px;
-}
-header div {
-    float: left;
-}
 header .name {
     display: block;
     font-family: 'CharisSIL';
     font-size: 38pt;
     line-height: 38pt;
+}
+@media screen and (max-width: 720px) {
+    header .name {
+        width: 100%;
+        font-size: 27pt;
+    }
 }
 header .position {
     float: right;
@@ -74,6 +98,11 @@ header .position {
     text-transform: uppercase;
     color: #777777;
 }
+@media screen and (max-width: 720px) {
+    header .position {
+        float: none;
+    }
+}
 header .contact {
     float: right;
     margin-left: 20px;
@@ -81,6 +110,14 @@ header .contact {
     font-size: 9pt;
     line-height: 12pt;
     color: #424242;
+}
+@media screen and (max-width: 720px) {
+    header .contact {
+        clear: both;
+        float: none;
+        margin-left: 0;
+        padding-top: 10px;
+    }
 }
 header .contact span, header .contact a {
     display: block;
@@ -99,9 +136,19 @@ section .header, section .content {
 section .header {
     width: 150px;
 }
+@media screen and (max-width: 720px) {
+    section .header {
+        width: 100%;
+    }
+}
 section .header span {
     display: block;
     margin-bottom: 5px;
+}
+@media screen and (max-width: 720px) {
+    section .header {
+        margin-bottom: 0;
+    }
 }
 section .header .title {
    text-transform: uppercase;
@@ -112,4 +159,13 @@ section .header .position {
 section .content {
     width: 545px;
     padding-left: 5px;
+}
+@media screen and (max-width: 720px) {
+    section {
+        padding-top: 20px;
+    }
+    section .content {
+        width: 100% ;
+        padding-left: 0;
+    }
 }
