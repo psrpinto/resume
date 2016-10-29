@@ -1,24 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+@font-face {
+    src: url(charissilr-webfont-en-subset.ttf);
+    font-family: 'CharisSIL';
+}
+
+/********
+ * Global
+ */
 body {
-    display: flex;
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    line-height: 14pt;
 }
-
-div.container {
+a {
+    color: inherit;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li:before {
+   content: '- ';
+}
+header, section {
+    width: 701px;
+    display: block;
     margin: auto;
-    // border: 1px solid black;
 }
 
+/********
+ * Header
+ */
+header {
+    padding-bottom: 120px;
+}
 header div {
     float: left;
 }
-
 header .name {
     display: block;
-    font-size: 35pt;
-    line-height: 35pt;
-    font-weight: bold;
+    font-family: 'CharisSIL';
+    font-size: 38pt;
+    line-height: 38pt;
+}
+header .position {
+    float: right;
+    padding-top: 10px;
+    font-family: 'CharisSIL';
+    font-size: 15pt;
+    text-transform: uppercase;
+    color: #777777;
+}
+header .contact {
+    float: right;
+    margin-left: 20px;
+    font-family: 'CharisSIL';
+    font-size: 9pt;
+    line-height: 12pt;
+    color: #424242;
+}
+header .contact span, header .contact a {
+    display: block;
 }
 
-header .title {
-    float: right;
+/*********
+ * Section
+ */
+section {
+    clear: both;
+}
+section .header, section .content {
+    float: left;
+    margin-bottom: 20px;
+}
+section .header {
+    width: 150px;
+}
+section .header span {
+    display: block;
+    margin-bottom: 5px;
+}
+section .header .title {
+   text-transform: uppercase;
+}
+section .header .position {
+    font-weight: bold;
+}
+section .content {
+    width: 545px;
+    padding-left: 5px;
 }
