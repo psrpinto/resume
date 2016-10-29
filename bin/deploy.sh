@@ -10,7 +10,7 @@ rm -rf *
 cp ../index.html .
 cp ../style.css .
 cp ../charissilr-webfont-en-subset.ttf .
-cp ../out.pdf .
+cp ../out.pdf CV_PauloRodriguesPinto.pdf
 
 git add .
 git commit -am "Sync"

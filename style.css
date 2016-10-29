@@ -15,6 +15,11 @@ body {
     font-size: 10pt;
     line-height: 14pt;
 }
+@media screen {
+    body {
+        font-size: 10pt;
+    }
+}
 a {
     color: inherit;
 }
@@ -26,10 +31,24 @@ ul {
 ul li:before {
    content: '- ';
 }
+
+/********
+ * Layout
+ */
 header, section {
     width: 701px;
     display: block;
     margin: auto;
+}
+section.info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media print {
+    section.info {
+        display: none;
+    }
 }
 
 /********
@@ -67,8 +86,8 @@ header .contact span, header .contact a {
     display: block;
 }
 
-/*********
- * Section
+/**********
+ * Sections
  */
 section {
     clear: both;
