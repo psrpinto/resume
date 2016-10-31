@@ -3,5 +3,6 @@
 wkhtmltopdf \
   --user-style-sheet fonts/print.css \
   --print-media-type \
-  --page-size A4 -L 14mm -T 12mm -B 0mm -R 10mm \
+  --page-size A4 \
+  -T 12mm -R 10mm -B 0mm -L 14mm \
   index.html CV_PauloRodriguesPinto.pdf

@@ -1,5 +1,7 @@
 # CV
 
+https://regularjack.github.io/cv
+
 ## Setup
 ```shell
 brew cask install wkhtmltopdf
