@@ -1,6 +1,5 @@
 # CV
-
-https://regularjack.github.io/cv
+My CV, written in HTML, with PDF generation. View it at https://regularjack.github.io/cv
 
 ## Setup
 ```shell
