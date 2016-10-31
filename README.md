@@ -1,6 +1,6 @@
 # CV
-## Setup
 
+## Setup
 ```shell
 brew cask install wkhtmltopdf
 brew install entr
@@ -13,11 +13,6 @@ bin/build.sh
 
 ```shell
 bin/watch.sh
-```
-
-## Deploying
-```shell
-bin/deploy.sh
 ```
 
 ## References
