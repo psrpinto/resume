@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-@font-face {
-    src: url(charissilr-webfont-en-subset.ttf);
-    font-family: 'CharisSIL';
-}
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,700') screen;
 
 /********
  * Global
@@ -80,8 +75,8 @@ section.info {
  */
 header .name {
     display: block;
-    font-family: 'CharisSIL';
-    font-size: 38pt;
+    font-family: 'Merriweather', serif;
+    font-size: 32pt;
     line-height: 38pt;
 }
 @media screen and (max-width: 720px) {
@@ -93,8 +88,9 @@ header .name {
 header .position {
     float: right;
     padding-top: 10px;
-    font-family: 'CharisSIL';
+    font-family: 'Merriweather', serif;
     font-size: 15pt;
+    font-weight: bold;
     text-transform: uppercase;
     color: #777777;
 }
@@ -106,7 +102,7 @@ header .position {
 header .contact {
     float: right;
     margin-left: 20px;
-    font-family: 'CharisSIL';
+    font-family: 'Merriweather', serif;
     font-size: 9pt;
     line-height: 12pt;
     color: #424242;
