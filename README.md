@@ -15,7 +15,11 @@ bin/build.sh
 bin/watch.sh
 ```
 
-## References
-- http://www.zackgrossbart.com/hackito/resume/
-- https://www.theguardian.com/careers/careers-blog/cv-advice-grab-employers-attention
-- http://www.resume-resource.com/resume-font-wars-serif-versus-sans-serif/
+## License
+
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Fonts:
+
+- Open Sans: [Apache](https://github.com/regularjack/cv/blob/gh-pages/fonts/Open_Sans/LICENSE)
+- Merriweather: [OFL](https://github.com/regularjack/cv/blob/gh-pages/fonts/Merriweather/LICENSE)
