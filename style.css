@@ -7,14 +7,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10pt;
-    line-height: 14pt;
+    font-size: 11pt;
+    line-height: 16pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #FFFFFA;
 }
-@media screen {
+@media print {
     body {
-        font-size: 11pt;
-        padding-left: 10px;
-        padding-right: 10px;
+        font-size: 10pt;
+        line-height: 15pt;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: white;
     }
 }
 a {
@@ -25,43 +30,21 @@ ul {
     margin: 0;
     padding: 0;
 }
-ul li:before {
+ul:not(.no-style) li:before {
    content: '- ';
 }
 
 /********
  * Layout
  */
-header, section {
-    width: 701px;
-    display: block;
-    margin: auto;
-}
-@media screen and (max-width: 720px) {
-    header, section {
-        width: 100%;
-    }
-}
-header {
-    padding-bottom: 120px;
-}
-@media screen and (max-width: 720px) {
-    header {
-        padding-bottom: 30px;
-    }
-}
-header div {
-    float: left;
-}
 section.info {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 720px) {
     section.info {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 @media print {
@@ -69,50 +52,84 @@ section.info {
         display: none;
     }
 }
+header, section {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+@media print, screen and (min-width: 720px) {
+    header, section {
+        width: 701px;
+    }
+}
+header div {
+    float: left;
+}
+@media screen and (min-width: 720px) {
+    header {
+        padding-bottom: 120px;
+    }
+}
+@media print {
+    header {
+        padding-bottom: 100px;
+    }
+}
+
 
 /********
  * Header
  */
+section.info {
+    text-align: center;
+}
+header {
+    font-family: 'Merriweather', serif;
+}
 header .name {
     display: block;
-    font-family: 'Merriweather', serif;
-    font-size: 32pt;
+    width: 100%;
+    font-size: 8vw;
     line-height: 38pt;
 }
-@media screen and (max-width: 720px) {
+@media print, screen and (min-width: 720px) {
     header .name {
-        width: 100%;
-        font-size: 27pt;
+        font-size: 32pt;
     }
 }
 header .position {
-    float: right;
     padding-top: 10px;
-    font-family: 'Merriweather', serif;
     font-size: 15pt;
     font-weight: bold;
     text-transform: uppercase;
     color: #777777;
 }
-@media screen and (max-width: 720px) {
+@media print, screen and (min-width: 720px) {
     header .position {
-        float: none;
+        float: right;
     }
 }
 header .contact {
-    float: right;
-    margin-left: 20px;
-    font-family: 'Merriweather', serif;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 40px;
     font-size: 9pt;
     line-height: 12pt;
     color: #424242;
 }
-@media screen and (max-width: 720px) {
+@media print, screen and (min-width: 720px) {
     header .contact {
-        clear: both;
-        float: none;
-        margin-left: 0;
-        padding-top: 10px;
+        clear: none;
+        float: right;
+        margin-top: 5px;
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+}
+@media print {
+    header .contact {
+        font-size: 8pt;
+        margin-right: 15px;
     }
 }
 header .contact span, header .contact a {
@@ -122,29 +139,35 @@ header .contact span, header .contact a {
 /**********
  * Sections
  */
-section {
+section:not(.info) {
     clear: both;
+    padding-top: 10px;
 }
 section .header, section .content {
     float: left;
     margin-bottom: 20px;
 }
-section .header {
-    width: 150px;
+@media print {
+    section .header, section .content {
+        margin-bottom: 5px;
+    }
 }
-@media screen and (max-width: 720px) {
+section .header {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+@media print, screen and (min-width: 720px) {
     section .header {
-        width: 100%;
+        width: 150px;
     }
 }
 section .header span {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
-@media screen and (max-width: 720px) {
-    section .header {
-        margin-bottom: 0;
-    }
+section .header span:not(.title):not(.position) {
+    font-size: 10pt;
+    line-height: 12pt;
 }
 section .header .title {
    text-transform: uppercase;
@@ -153,15 +176,39 @@ section .header .position {
     font-weight: bold;
 }
 section .content {
-    width: 545px;
-    padding-left: 5px;
+    width: 100% ;
 }
-@media screen and (max-width: 720px) {
-    section {
-        padding-top: 20px;
-    }
+@media print, screen and (min-width: 720px) {
     section .content {
-        width: 100% ;
-        padding-left: 0;
+        width: 540px;
+        padding-left: 10px;
+    }
+}
+section .content *:first-child {
+    margin-top: 0;
+}
+section .content p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+section .content p:nth-child(2) { /* <p> following a <ul> */
+    margin-top: 4px;
+}
+section .content ul.keywords li {
+    display: inline;
+    font-weight: bold;
+}
+section .content ul.keywords li:before {
+   content: '';
+}
+section .content ul.keywords li:not(:last-child):after {
+   content: ', ';
+}
+section:last-child .content {
+    padding-bottom: 60px;
+}
+@media print {
+    section:last-child .content {
+        padding-bottom: 0;
     }
 }
