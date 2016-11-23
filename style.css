@@ -16,7 +16,7 @@ body {
 @media print {
     body {
         font-size: 10pt;
-        line-height: 15pt;
+        line-height: 14.5pt;
         padding-left: 0;
         padding-right: 0;
         background-color: white;
@@ -149,7 +149,7 @@ section .header, section .content {
 }
 @media print {
     section .header, section .content {
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 }
 section .header {
