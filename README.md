@@ -1,7 +1,7 @@
-# CV
-My CV, written in plain old responsive HTML and CSS. The same HTML and CSS is used to generate a PDF version, using [wkhtmltopdf](http://wkhtmltopdf.org). Based on a design by [Zack Grossbart](http://www.zackgrossbart.com/hackito/resume/).
+# Resume
+My Resume, written in plain old responsive HTML and CSS. The same HTML and CSS is used to generate a PDF version, using [wkhtmltopdf](http://wkhtmltopdf.org). Based on a design by [Zack Grossbart](http://www.zackgrossbart.com/hackito/resume/).
 
-> View it online at https://regularjack.github.io/cv
+> View it online at https://psrpinto.github.io/cv
 
 ## Setup
 For PDF generation, you need to install `wkhtmltopdf`:
