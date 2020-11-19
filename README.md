@@ -20,7 +20,9 @@ Generate the PDF with:
 make
 ```
 
-To automatically generate the PDF whenever files change, follow the following instructions. Note this is macOS only, and it's setup to use Google Chrome by default, though I'm sure similar strategies could be used in other environments.
+To automatically generate the PDF whenever files change, follow the following instructions.
+
+> Note this is macOS only, and it's setup to use Google Chrome by default, though I'm sure similar strategies could be used in other environments.
 
 1. Generate the PDF with `make`.
 2. Open the generated PDF in Google Chrome.
