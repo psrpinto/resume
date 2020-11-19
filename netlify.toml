@@ -1,0 +1,9 @@
+[build]
+
+command = "./bin/build.sh"
+publish = "."
+
+[[redirects]]
+from = "/*"
+to = "/"
+status = 200
