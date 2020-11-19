@@ -13,12 +13,14 @@ For PDF generation, you need to install `wkhtmltopdf`:
 
 ## Building
 Generate the PDF with:
+
 ```shell
-bin/build.sh
+make
 ```
 
 ## Watching
-Automatically generate the PDF and refresh the browser when files change (macOS only):
+Automatically generate the PDF and refresh the browser when files change (MacOS only):
+
 ```shell
 brew install entr
 bin/watch.sh
