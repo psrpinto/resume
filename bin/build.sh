@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 wkhtmltopdf \
+  --enable-local-file-access \
   --user-style-sheet fonts/print.css \
   --print-media-type \
   --page-size A4 \
