@@ -1,5 +1,5 @@
 # Resume
-My resume, written in plain old responsive HTML and CSS. The same HTML and CSS is used to generate a PDF version, using [wkhtmltopdf](http://wkhtmltopdf.org). Based on a design by [Zack Grossbart](http://www.zackgrossbart.com/hackito/resume/).
+My resume, written in vanilla HTML and CSS, with PDF generation through [wkhtmltopdf](http://wkhtmltopdf.org).
 
 > View it online at https://resume.paulopinto.io
 
@@ -25,10 +25,9 @@ To automatically generate the PDF whenever files change, follow the following in
 2. Open the generated PDF in Google Chrome.
 3. Run `make watch`, which will refresh the currently active tab in Google Chrome, whenever the `index.html` or `style.css` files change.
 
-## License
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+## License and Acknowledgements
+- Code: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Open Sans font: [Apache](https://github.com/regularjack/cv/blob/gh-pages/fonts/Open_Sans/LICENSE)
+- Merriweather font: [OFL](https://github.com/regularjack/cv/blob/gh-pages/fonts/Merriweather/LICENSE)
 
-Fonts:
-
-- Open Sans: [Apache](https://github.com/regularjack/cv/blob/gh-pages/fonts/Open_Sans/LICENSE)
-- Merriweather: [OFL](https://github.com/regularjack/cv/blob/gh-pages/fonts/Merriweather/LICENSE)
+Based on a design by [Zack Grossbart](http://www.zackgrossbart.com/hackito/resume/).
