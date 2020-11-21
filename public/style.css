@@ -37,18 +37,18 @@ ul:not(.no-style) li:before {
 /********
  * Layout
  */
-section.info {
+section.download {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 @media screen and (min-width: 720px) {
-    section.info {
+    section.download {
         margin-top: 40px;
         margin-bottom: 40px;
     }
 }
 @media print {
-    section.info {
+    section.download {
         display: none;
     }
 }
@@ -80,7 +80,7 @@ header div {
 /********
  * Header
  */
-section.info {
+section.download {
     text-align: center;
 }
 header {
@@ -139,7 +139,7 @@ header .contact span, header .contact a {
 /**********
  * Sections
  */
-section:not(.info) {
+section:not(.download) {
     clear: both;
     padding-top: 10px;
 }
