@@ -94,7 +94,7 @@ header .name {
 }
 @media print, screen and (min-width: 720px) {
     header .name {
-        font-size: 31pt;
+        font-size: 41pt;
     }
 }
 header .position {
