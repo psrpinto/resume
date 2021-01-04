@@ -165,7 +165,7 @@ section .header span {
     display: block;
     margin-bottom: 2px;
 }
-section .header span:not(.title):not(.position) {
+section .header *:not(.title):not(.position):not(.keywords) {
     font-size: 10pt;
     line-height: 12pt;
 }
@@ -194,9 +194,11 @@ section .content p {
 section .content p:nth-child(2) { /* <p> following a <ul> */
     margin-top: 4px;
 }
+section .header ul.keywords {
+    margin: 8px 0 8px 0;
+}
 section .header ul.keywords li {
     display: inline;
-    font-weight: bold;
 }
 section .header ul.keywords li:before {
    content: '';
