@@ -194,14 +194,14 @@ section .content p {
 section .content p:nth-child(2) { /* <p> following a <ul> */
     margin-top: 4px;
 }
-section .content ul.keywords li {
+section .header ul.keywords li {
     display: inline;
     font-weight: bold;
 }
-section .content ul.keywords li:before {
+section .header ul.keywords li:before {
    content: '';
 }
-section .content ul.keywords li:not(:last-child):after {
+section .header ul.keywords li:not(:last-child):after {
    content: ', ';
 }
 section:last-child .content {
