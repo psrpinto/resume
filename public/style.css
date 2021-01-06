@@ -5,18 +5,16 @@
  */
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 11pt;
     line-height: 16pt;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     background-color: #FFFFFA;
 }
 @media print {
     body {
-        font-size: 10pt;
-        line-height: 14.5pt;
+        font-size: 10.5pt;
+        line-height: 14.8pt;
         padding-left: 0;
         padding-right: 0;
         background-color: white;
@@ -26,29 +24,35 @@ a {
     color: inherit;
 }
 ul {
-    list-style: none;
+    list-style-type: "– ";
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 10px;
 }
-ul:not(.no-style) li:before {
-   content: '- ';
+@media print {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li:before {
+        content: '- ';
+    }
 }
 
 /********
  * Layout
  */
-section.info {
+section.download {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 @media screen and (min-width: 720px) {
-    section.info {
+    section.download {
         margin-top: 40px;
         margin-bottom: 40px;
     }
 }
 @media print {
-    section.info {
+    section.download {
         display: none;
     }
 }
@@ -80,7 +84,7 @@ header div {
 /********
  * Header
  */
-section.info {
+section.download {
     text-align: center;
 }
 header {
@@ -94,7 +98,7 @@ header .name {
 }
 @media print, screen and (min-width: 720px) {
     header .name {
-        font-size: 31pt;
+        font-size: 41pt;
     }
 }
 header .position {
@@ -139,7 +143,7 @@ header .contact span, header .contact a {
 /**********
  * Sections
  */
-section:not(.info) {
+section:not(.download) {
     clear: both;
     padding-top: 10px;
 }
@@ -165,7 +169,7 @@ section .header span {
     display: block;
     margin-bottom: 2px;
 }
-section .header span:not(.title):not(.position) {
+section .header *:not(.title):not(.position) {
     font-size: 10pt;
     line-height: 12pt;
 }
@@ -187,6 +191,11 @@ section .content {
 section .content *:first-child {
     margin-top: 0;
 }
+@media print, screen and (min-width: 720px) {
+    section .content.first-entry {
+        margin-top: 24px;
+    }
+}
 section .content p {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -194,14 +203,18 @@ section .content p {
 section .content p:nth-child(2) { /* <p> following a <ul> */
     margin-top: 4px;
 }
-section .content ul.keywords li {
-    display: inline;
-    font-weight: bold;
+section .header ul.keywords {
+    list-style-type: none;
+    padding: 0 50px 0 0;
+    margin: 8px 0 8px 0;
 }
-section .content ul.keywords li:before {
+section .header ul.keywords li {
+    display: inline;
+}
+section .header ul.keywords li:before {
    content: '';
 }
-section .content ul.keywords li:not(:last-child):after {
+section .header ul.keywords li:not(:last-child):after {
    content: ', ';
 }
 section:last-child .content {

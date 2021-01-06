@@ -30,7 +30,7 @@ To automatically generate the PDF whenever files change, follow the following in
 
 ## Licenses and Acknowledgements
 - Code: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- Open Sans font: [Apache](https://github.com/regularjack/cv/blob/gh-pages/fonts/Open_Sans/LICENSE)
-- Merriweather font: [OFL](https://github.com/regularjack/cv/blob/gh-pages/fonts/Merriweather/LICENSE)
+- Open Sans font: [Apache](https://github.com/psrpinto/resume/blob/master/fonts/Open_Sans/LICENSE)
+- Merriweather font: [OFL](https://github.com/psrpinto/resume/blob/master/fonts/Merriweather/LICENSE)
 
 Based on a design by [Zack Grossbart](http://www.zackgrossbart.com/hackito/resume/).
