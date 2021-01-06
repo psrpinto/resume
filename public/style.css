@@ -5,12 +5,10 @@
  */
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 11pt;
     line-height: 16pt;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     background-color: #FFFFFA;
 }
 @media print {
@@ -26,12 +24,18 @@ a {
     color: inherit;
 }
 ul {
-    list-style: none;
+    list-style-type: "– ";
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 10px;
 }
-ul:not(.no-style) li:before {
-   content: '- ';
+@media print {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li:before {
+        content: '- ';
+    }
 }
 
 /********
@@ -203,6 +207,8 @@ section .content p:nth-child(2) { /* <p> following a <ul> */
     margin-top: 4px;
 }
 section .header ul.keywords {
+    list-style-type: none;
+    padding: 0 50px 0 0;
     margin: 8px 0 8px 0;
 }
 section .header ul.keywords li {
