@@ -169,7 +169,7 @@ section .header span {
     display: block;
     margin-bottom: 2px;
 }
-section .header *:not(.title):not(.position):not(.keywords) {
+section .header *:not(.title):not(.position) {
     font-size: 10pt;
     line-height: 12pt;
 }
@@ -178,9 +178,6 @@ section .header .title {
 }
 section .header .position {
     font-weight: bold;
-}
-section .header .keywords {
-    font-size: 10pt;
 }
 section .content {
     width: 100% ;
