@@ -15,8 +15,8 @@ body {
 }
 @media print {
     body {
-        font-size: 10pt;
-        line-height: 14.5pt;
+        font-size: 10.5pt;
+        line-height: 14.8pt;
         padding-left: 0;
         padding-right: 0;
         background-color: white;
