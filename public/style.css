@@ -190,6 +190,11 @@ section .content {
 section .content *:first-child {
     margin-top: 0;
 }
+@media print, screen and (min-width: 720px) {
+    section .content.first-entry {
+        margin-top: 24px;
+    }
+}
 section .content p {
     margin-top: 8px;
     margin-bottom: 8px;
