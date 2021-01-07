@@ -173,11 +173,17 @@ section .header *:not(.title):not(.position) {
     font-size: 10pt;
     line-height: 12pt;
 }
+section .header *:not(.title):not(.position):not(.company) {
+    color: #4f4f4f;
+}
 section .header .title {
    text-transform: uppercase;
 }
 section .header .position {
     font-weight: bold;
+}
+section .header .company {
+    margin-bottom: 8px;
 }
 section .content {
     width: 100% ;
