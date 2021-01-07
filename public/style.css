@@ -177,7 +177,9 @@ section .header *:not(.title):not(.position):not(.company) {
     color: #4f4f4f;
 }
 section .header .title {
-   text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #777777;
 }
 section .header .position {
     font-weight: bold;
