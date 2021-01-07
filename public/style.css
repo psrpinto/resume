@@ -93,6 +93,7 @@ header {
 header .name {
     display: block;
     width: 100%;
+    padding-top: 4px;
     font-size: 8vw;
     line-height: 38pt;
 }
@@ -110,7 +111,7 @@ header .position {
 }
 @media print, screen and (min-width: 720px) {
     header .position {
-        float: right;
+        float: left;
     }
 }
 header .contact {
@@ -173,11 +174,19 @@ section .header *:not(.title):not(.position) {
     font-size: 10pt;
     line-height: 12pt;
 }
+section .header *:not(.title):not(.position):not(.company) {
+    color: #4f4f4f;
+}
 section .header .title {
-   text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #777777;
 }
 section .header .position {
     font-weight: bold;
+}
+section .header .company {
+    margin-bottom: 8px;
 }
 section .content {
     width: 100% ;
@@ -193,7 +202,7 @@ section .content *:first-child {
 }
 @media print, screen and (min-width: 720px) {
     section .content.first-entry {
-        margin-top: 24px;
+        margin-top: 22px;
     }
 }
 section .content p {
