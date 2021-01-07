@@ -93,6 +93,7 @@ header {
 header .name {
     display: block;
     width: 100%;
+    padding-top: 4px;
     font-size: 8vw;
     line-height: 38pt;
 }
