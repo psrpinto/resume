@@ -110,7 +110,7 @@ header .position {
 }
 @media print, screen and (min-width: 720px) {
     header .position {
-        float: right;
+        float: left;
     }
 }
 header .contact {
