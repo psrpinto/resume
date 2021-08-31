@@ -20,14 +20,6 @@ Generate the PDF with:
 make
 ```
 
-To automatically generate the PDF whenever files change, follow the following instructions.
-
-> Note this is macOS only, and it's setup to use Google Chrome by default, though I'm sure similar strategies could be used in other environments.
-
-1. Generate the PDF with `make`.
-2. Open the generated PDF in Google Chrome.
-3. Run `make watch`, which will refresh the currently active tab in Google Chrome, whenever the `index.html` or `style.css` files change.
-
 ## Licenses and Acknowledgements
 - Code: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Open Sans font: [Apache](https://github.com/psrpinto/resume/blob/master/fonts/Open_Sans/LICENSE)
