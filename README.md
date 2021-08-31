@@ -10,7 +10,7 @@ This site is hosted on [Netlify](https://www.netlify.com). Whenever commits are 
 Make sure you have `wkhtmltopdf` installed:
 
 ```shell
-[macOS] brew cask install wkhtmltopdf
+[macOS] brew install wkhtmltopdf
 [Debian-based] sudo apt-get install wkhtmltopdf
 ```
 
